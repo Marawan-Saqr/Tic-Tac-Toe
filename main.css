@@ -1,0 +1,67 @@
+body{
+  background-color: #fff;
+  background-image: url("Assets/Background.jpg");
+}
+
+.game-board{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-board h2{
+  color: #fff;
+  background-color: rgb(128, 47, 47);
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.game-board .item{
+  background-color: rgb(128, 47, 47);
+  width: 214px;
+  height: 116px;
+  border-radius: 5px;
+  float: left;
+  margin: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 105px;
+  text-align: center;
+}
+
+.game-board .item:hover{
+  background-color: #740000;
+  transition: all 0.5s;
+}
+
+.retry button{
+  color: #fff;
+  background-color: rgb(128, 47, 47);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.retry{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+}
+
+.retry button:hover{
+  background-color: rgb(71, 21, 21);
+  transition: all 0.5s;
+}
+
+#my-canvas{
+  position: fixed;
+}
+
